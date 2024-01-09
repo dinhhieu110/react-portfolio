@@ -38,9 +38,9 @@ export default function Works() {
   return (
     <div className="works" id="works">
       <div className="slider" style={{ left: `${currentSlide * -100}vw` }}>
-        {data.map((d) => {
+        {data.map((d, index) => {
           return (
-            <div className="container">
+            <div key={index} className="container">
               <div className="item">
                 <div className="left">
                   <div className="leftContainer">

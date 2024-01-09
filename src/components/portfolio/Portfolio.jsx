@@ -45,9 +45,10 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
-        {list.map((item, index) => {
+        {list.map((item) => {
           return (
             <PortfolioList
+              key={item.id}
               title={item.title}
               id={item.id}
               active={selected === item.id}

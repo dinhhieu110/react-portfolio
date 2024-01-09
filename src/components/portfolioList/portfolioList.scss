@@ -2,10 +2,15 @@
 li {
   font-size: 14px;
   margin-right: 50px;
-  padding: 0.7;
   border-radius: 10px;
   padding: 8px;
   cursor: pointer;
+  @include mobile {
+    padding: 5px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    margin: 0;
+  }
 
   &.active {
     background-color: $mainColor;

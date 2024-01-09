@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .works {
   background-color: rgb(3, 102, 46);
   display: flex;
@@ -8,15 +9,26 @@
   .arrow {
     height: 50px;
     position: absolute;
+    @include mobile {
+      height: 60px;
+    }
 
     &.left {
       left: 100px;
       cursor: pointer;
       transform: rotate(180deg);
+      @include mobile {
+        top: 100px;
+        left: 170px;
+      }
     }
     &.right {
       right: 100px;
       cursor: pointer;
+      @include mobile {
+        bottom: 100px;
+        left: 170px;
+      }
     }
   }
 
